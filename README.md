@@ -41,8 +41,13 @@ Run source-level checks:
     make test
     python scripts/smoke_test.py
 
-The nine downloaded archives and extracted official splits are already under
-`data/raw/`. To retrieve fresh copies from the same no-login source:
+The downloadable submission ZIP contains the nine downloaded archives and
+extracted official splits under `data/raw/`. A public GitHub clone keeps the
+same archives as small files under `data/archives/`; reconstruct them first:
+
+    python scripts/extract_included_archives.py
+
+Alternatively, retrieve fresh copies from the same no-login source:
 
     python scripts/fetch_datasets.py --keep-archives
     python scripts/validate_datasets.py
@@ -78,6 +83,6 @@ keys, nonfinite values, and inconsistent correct/test fractions are rejected.
 ## One-location review route
 
 Reviewers can clone the public repository, install the locked environment, run
-`python scripts/validate_datasets.py`, then run `make test`, `make verify`, and
-`make paper`. The included exact data archives remove the need for a second
-login or data portal during reproduction.
+`python scripts/extract_included_archives.py`, validate the exact split files,
+then run `make test`, `make verify`, and `make paper`. The included archives
+remove the need for a second login or data portal during reproduction.
