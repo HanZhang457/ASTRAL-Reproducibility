@@ -1,0 +1,5 @@
+# Expected frozen identities; filenames are normalized repository names.
+# These entries are verification targets, not evidence that the corresponding bytes are already present.
+f91c6e3581793acf8ccefb394eb16dd048e42f181078f0c63dd0972be88e8e41  formal/TASSL_DMKD_v8_formal_gate_checkpoint_20260902_round4m_1099_clean.zip
+460c0f6c4dab7ecbb20e7912ec3330e32cfc0038732afa219ac51a936d9a53d8  data/UEA_InsectWingbeat_seed0_40ec78dc13be_aee200865239.npz
+4fe3998758b73b1dc9f3ffad610db664a9eeca0648fd58f9610be73d3298fcbe  recovery/TASSL_DMKD_v8_InsectWingbeat_CONTEXT_150of150_FULL_PASS_20260904.zip
