@@ -1,0 +1,13 @@
+{
+  "package_status": "REBUILT_REFERENCE_CODE_PASS_HISTORICAL_EVIDENCE_BLOCKED",
+  "public_repository": "https://github.com/HanZhang457/ASTRAL-Reproducibility",
+  "gates": {
+    "reference_source": "PASS_6_UNIT_TESTS_AND_SMOKE",
+    "paper_source": "PASS_PDFLATEX_BIBTEX_23_PAGES",
+    "official_data_bytes": "PASS_9_OF_9_INCLUDED_AND_VALIDATED",
+    "historical_primary_rows": "BLOCKED_NOT_RECOVERED",
+    "historical_ts2vec_rows": "BLOCKED_NOT_RECOVERED",
+    "figures": "PASS_4_OF_4_REBUILT",
+    "clean_reproduction": "PARTIAL_SOURCE_AND_DATA_PASS_HISTORICAL_RESULTS_BLOCKED"
+  }
+}

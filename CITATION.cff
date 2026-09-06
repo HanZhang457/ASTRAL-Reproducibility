@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, cite the accompanying ASTRAL article."
+title: "ASTRAL Reproducibility Package"
+type: software
+version: 0.1.0
+date-released: 2026-09-06
+repository-code: "https://github.com/HanZhang457/ASTRAL-Reproducibility"
+authors:
+  - family-names: Deng
+    given-names: Chen
+  - family-names: Zhang
+    given-names: Han
+    email: hanzhang@dufe.edu.cn
+

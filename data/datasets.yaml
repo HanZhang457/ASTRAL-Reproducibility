@@ -1,0 +1,11 @@
+datasets:
+  - {name: ItalyPowerDemand, archive: UCR, train: 67, test: 1029, length: 24, channels: 1, classes: 2}
+  - {name: GunPoint, archive: UCR, train: 50, test: 150, length: 150, channels: 1, classes: 2}
+  - {name: ArrowHead, archive: UCR, train: 36, test: 175, length: 251, channels: 1, classes: 3}
+  - {name: ECG200, archive: UCR, train: 100, test: 100, length: 96, channels: 1, classes: 2}
+  - {name: Coffee, archive: UCR, train: 28, test: 28, length: 286, channels: 1, classes: 2}
+  - {name: BasicMotions, archive: UEA, train: 40, test: 40, length: 100, channels: 6, classes: 4}
+  - {name: Epilepsy, archive: UEA, train: 137, test: 138, length: 206, channels: 3, classes: 4}
+  - {name: AtrialFibrillation, archive: UEA, train: 15, test: 15, length: 640, channels: 2, classes: 3}
+  - {name: StandWalkJump, archive: UEA, train: 12, test: 15, length: 2500, channels: 4, classes: 3}
+

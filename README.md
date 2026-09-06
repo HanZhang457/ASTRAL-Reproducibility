@@ -1,61 +1,83 @@
-# ASTRAL Reproducibility Repository
+# ASTRAL reproducibility package
 
-Public computational companion for:
+This package rebuilds the computational companion for:
 
-> **ASTRAL: Auditable Structural Teacher Representation and Alignment Learning for Time-Series Classification**
+**ASTRAL: Auditable Structural Teacher Representation and Alignment Learning
+for Time-Series Classification**
 
-**Release status: PRE-RELEASE.** Public access is active, but this repository must not yet be cited as complete replication evidence. The scientific release becomes valid only after every item in [RELEASE_GATES.md](RELEASE_GATES.md) passes and an immutable `v1.0.0` release is issued.
+Public repository:
+https://github.com/HanZhang457/ASTRAL-Reproducibility
 
-## Purpose
+## Important status
 
-This repository is designed as the single, no-login location for the manuscript's:
+The reference implementation and validation framework are reconstructed from
+the frozen manuscript specification. Historical result ledgers that could not
+be recovered are not fabricated. The nine exact official archive downloads are
+included with source URLs, archive hashes, split-file hashes, and observed split
+identities. See STATUS_FAIL_CLOSED.md before using any numerical claim.
 
-- executable reference implementation;
-- exact data and official train/test split identities;
-- frozen configurations, seeds, and dependency locks;
-- row-level experimental results;
-- table and figure generation scripts;
-- integrity receipts and clean-environment reproduction report.
+## Contents
 
-Recovery checkpoints are retained only as recovery evidence. They are not promoted to registered experimental results.
+- configs/: frozen paper configuration.
+- src/astral/: deterministic teacher, exact kernel realization, neural
+  primitives, fusion, data loading, and audit utilities.
+- scripts/: data retrieval, validation, exact ASTRAL-K execution, figures, and
+  end-to-end orchestration.
+- tests/: finite-dimensional implementation tests.
+- results/: manuscript snapshots, explicitly marked unverified.
+- validation/: expected historical hashes and generated receipts.
+- paper/: latest recoverable Springer LaTeX source and bibliography.
 
-## Planned repository layout
+## Quick start
 
-```text
-configs/        frozen experiment and method configurations
-data/           exact inputs, split manifests, checksums, and provenance
-src/            ASTRAL reference implementation
-scripts/        validation and end-to-end reproduction entry points
-results/        row-level registered results and summary outputs
-figures/        deterministic figure-generation sources and outputs
-validation/     integrity, identity, and clean-reproduction receipts
-paper/          manuscript source corresponding to the released evidence
-```
+Create the historical environment:
 
-## Integrity anchors
+    conda env create -f environment.yml
+    conda activate astral-reproduction
+    pip install -e .
 
-The release process is fail-closed: a file is accepted only when its byte identity matches the frozen record.
+Run source-level checks:
 
-| Object | Expected SHA-256 |
-|---|---|
-| Formal 1,099-row checkpoint package | `f91c6e3581793acf8ccefb394eb16dd048e42f181078f0c63dd0972be88e8e41` |
-| InsectWingbeat context cache | `460c0f6c4dab7ecbb20e7912ec3330e32cfc0038732afa219ac51a936d9a53d8` |
-| Frozen InsectWingbeat TRAIN split | `40ec78dc13be1df92590535aeab8e724d8efda1c5d9fe33ed03ce9614675bb2e` |
-| Frozen InsectWingbeat TEST split | `aee200865239737b9304e80949153f5193cac3d08b98dac9ced8ddf1f1189f89` |
-| CONTEXT 150/150 recovery archive | `4fe3998758b73b1dc9f3ffad610db664a9eeca0648fd58f9610be73d3298fcbe` |
+    make test
+    python scripts/smoke_test.py
 
-## Naming continuity
+The nine downloaded archives and extracted official splits are already under
+`data/raw/`. To retrieve fresh copies from the same no-login source:
 
-The manuscript name **ASTRAL** replaces the historical working name **TASSL**. Historical filenames and experiment identifiers remain unchanged where required for checksum continuity. The mapping is one-to-one and does not change models, hyperparameters, seeds, splits, predictions, or statistical rules.
+    python scripts/fetch_datasets.py --keep-archives
+    python scripts/validate_datasets.py
 
-## Access
+Run the exact ASTRAL-K path on one dataset:
 
-This repository is public and can be opened without a GitHub account:
+    python scripts/run_exact_astral.py GunPoint
 
-<https://github.com/HanZhang457/ASTRAL-Reproducibility>
+Rebuild available outputs and validation receipts:
 
-A permanent archival DOI will be added after the complete, verified `v1.0.0` release is deposited in an archival service.
+    python scripts/reproduce_all.py
+    python scripts/verify_integrity.py
+    python scripts/build_manifest.py
 
-## Citation
+Build the Springer Nature manuscript:
 
-Citation metadata will be added only after the complete evidence release is signed.
+    make paper
+
+Use "--strict" with verify_integrity.py only after the historical frozen
+artifacts have been placed at the paths in validation/EXPECTED_SHA256SUMS.txt.
+
+## Reproduction boundaries
+
+The exact teacher and kernel path can be reproduced with NumPy, SciPy, and
+scikit-learn. The neural path requires PyTorch. Random-convolution baselines
+require aeon. TS2Vec requires its separately pinned implementation and is not
+silently replaced by another encoder.
+
+No test labels are used to construct descriptors, calibrate component
+bandwidths, train representations, or choose epochs. Duplicate experimental
+keys, nonfinite values, and inconsistent correct/test fractions are rejected.
+
+## One-location review route
+
+Reviewers can clone the public repository, install the locked environment, run
+`python scripts/validate_datasets.py`, then run `make test`, `make verify`, and
+`make paper`. The included exact data archives remove the need for a second
+login or data portal during reproduction.

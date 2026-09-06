@@ -1,0 +1,38 @@
+method:
+  name: ASTRAL
+  historical_name: TASSL
+  windows: [5, 11, 25]
+  pool_length: 24
+  acf_lags: 12
+  component_weights: [0.4, 0.3, 0.3]
+  calibration_pairs: 1024
+  descriptor_epsilon: 1.0e-6
+  kernel_rank: 96
+  neural_dimension: 96
+  branch_dimension: 32
+  teacher_neighbors: 5
+  rank_margin: 0.05
+  rank_temperature: 0.1
+  spectral_confidence_floor: 0.02
+training:
+  max_epochs: 60
+  patience: 10
+  batch_size: 64
+  learning_rate: 1.0e-3
+  weight_decay: 1.0e-4
+  pairs_per_batch: 256
+  triplets_per_batch: 128
+  gradient_clip: 5.0
+probe:
+  C: 1.0
+  max_iter: 3000
+  random_state: 0
+random:
+  calibration_seed: 0
+  split_seed: 0
+  experiment_seeds: [0, 1, 2, 3, 4]
+protocol:
+  official_train_test_split: true
+  per_case_per_channel_standardization: true
+  test_labels_for_final_metrics_only: true
+

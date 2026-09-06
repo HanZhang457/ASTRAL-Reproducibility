@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "astral-tsc"
+version = "0.1.0"
+description = "Auditable Structural Teacher Representation and Alignment Learning"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy==2.0.2",
+  "scipy==1.14.1",
+  "scikit-learn==1.7.2",
+  "pandas==2.2.3",
+  "PyYAML==6.0.2",
+]
+
+[project.optional-dependencies]
+neural = ["torch==2.5.1"]
+benchmarks = ["aeon==1.5.0"]
+figures = ["matplotlib==3.9.4", "seaborn==0.13.2"]
+test = ["pytest==8.3.5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+

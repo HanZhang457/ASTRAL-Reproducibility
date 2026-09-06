@@ -1,5 +1,5 @@
-historical_name,manuscript_name,identity_policy
-TASSL,ASTRAL,display-name-only
-TASSL-N,ASTRAL-N,display-name-only
-TASSL-K,ASTRAL-K,display-name-only
-TASSL-D,ASTRAL-D,display-name-only
+historical_name,manuscript_name
+TASSL,ASTRAL
+TASSL-N,ASTRAL-N
+TASSL-K,ASTRAL-K
+TASSL-D,ASTRAL-D

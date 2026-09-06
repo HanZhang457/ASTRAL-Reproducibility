@@ -1,29 +1,12 @@
-# Data and split provenance
+# Exact data policy
 
-The signed release will place the manuscript's exact computational inputs in this directory, subject to the original archive redistribution terms.
+The paper uses the official predefined UCR/UEA train/test files listed in
+datasets.yaml. Run "python scripts/fetch_datasets.py" to place the archive
+files under data/raw/ and record their downloaded SHA-256 values.
 
-## Dataset panel
-
-- ItalyPowerDemand
-- GunPoint
-- ArrowHead
-- BasicMotions
-- ECG200
-- Coffee
-- Epilepsy
-- AtrialFibrillation
-- StandWalkJump
-- InsectWingbeat (completion and recovery audit)
-
-Official UCR/UEA train/test boundaries are preserved. No random resplitting of the official test sets is permitted.
-
-## Acceptance rule
-
-A dataset becomes release-valid only when:
-
-1. the exact file is present or a lawful, immutable mirror is supplied;
-2. its SHA-256 matches the frozen manifest;
-3. shape, label set, train/test counts, and split identifier pass validation;
-4. no test label is used for descriptor calibration, representation training, epoch selection, or model selection.
-
-Files not meeting all four conditions remain blocked and cannot support a manuscript claim.
+The package contains the nine archives downloaded from the no-login archive
+URLs in `datasets.yaml`, plus their extracted official TRAIN/TEST files.
+`raw/DOWNLOAD_RECEIPT.json` records archive SHA-256 values and
+`../validation/dataset_receipt.json` records exact split-file SHA-256 values,
+sizes, shapes, and class counts. Preserve upstream attribution and confirm
+redistribution terms before publishing the copied archive bytes elsewhere.

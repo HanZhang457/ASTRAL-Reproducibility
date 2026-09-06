@@ -1,0 +1,83 @@
+{
+  "ArrowHead": {
+    "archive_sha256": "790a51e664c347df1e931ffc63afc93b1e718ff75c146e7a2d5c669e51b037c4",
+    "channels": 1,
+    "classes": 3,
+    "length": 251,
+    "test": 175,
+    "train": 36,
+    "url": "https://www.timeseriesclassification.com/aeon-toolkit/ArrowHead.zip"
+  },
+  "AtrialFibrillation": {
+    "archive_sha256": "218abad67d58190a6daa1a27f4bd58ace6e18f80fb59fb2c7385f0d2d4b411a2",
+    "channels": 2,
+    "classes": 3,
+    "length": 640,
+    "test": 15,
+    "train": 15,
+    "url": "https://www.timeseriesclassification.com/aeon-toolkit/AtrialFibrillation.zip"
+  },
+  "BasicMotions": {
+    "archive_sha256": "f427609dfe343b1da0dc54ee361f61579e7f18c2a007121740a9f0d90286fac3",
+    "channels": 6,
+    "classes": 4,
+    "length": 100,
+    "test": 40,
+    "train": 40,
+    "url": "https://www.timeseriesclassification.com/aeon-toolkit/BasicMotions.zip"
+  },
+  "Coffee": {
+    "archive_sha256": "bfba9d67f4a0f2041cb8ba88b60b11f10dab60b670e40b904ac47bd7dfdf4749",
+    "channels": 1,
+    "classes": 2,
+    "length": 286,
+    "test": 28,
+    "train": 28,
+    "url": "https://www.timeseriesclassification.com/aeon-toolkit/Coffee.zip"
+  },
+  "ECG200": {
+    "archive_sha256": "755937ea37849346ea20033666b19d17345bb039971e8fa33458b16b62c09380",
+    "channels": 1,
+    "classes": 2,
+    "length": 96,
+    "test": 100,
+    "train": 100,
+    "url": "https://www.timeseriesclassification.com/aeon-toolkit/ECG200.zip"
+  },
+  "Epilepsy": {
+    "archive_sha256": "8e5ce818a4989e520aa620f3009621692f06c8e8e73d72ee98cc0dbdee7c10c9",
+    "channels": 3,
+    "classes": 4,
+    "length": 206,
+    "test": 138,
+    "train": 137,
+    "url": "https://www.timeseriesclassification.com/aeon-toolkit/Epilepsy.zip"
+  },
+  "GunPoint": {
+    "archive_sha256": "d7513cfe222418fabfdb5a6434ffb21ac3de4923e637971e9388ebc857816803",
+    "channels": 1,
+    "classes": 2,
+    "length": 150,
+    "test": 150,
+    "train": 50,
+    "url": "https://www.timeseriesclassification.com/aeon-toolkit/GunPoint.zip"
+  },
+  "ItalyPowerDemand": {
+    "archive_sha256": "4b68635dc79855fbdb7787d5dff5bac978fd0448afaa8eb7811dae52d43e5e46",
+    "channels": 1,
+    "classes": 2,
+    "length": 24,
+    "test": 1029,
+    "train": 67,
+    "url": "https://www.timeseriesclassification.com/aeon-toolkit/ItalyPowerDemand.zip"
+  },
+  "StandWalkJump": {
+    "archive_sha256": "76dfd89c1c32d3fa387e8610a86979295f54ef686c2b4bb255b5dbb5edfc9614",
+    "channels": 4,
+    "classes": 3,
+    "length": 2500,
+    "test": 15,
+    "train": 12,
+    "url": "https://www.timeseriesclassification.com/aeon-toolkit/StandWalkJump.zip"
+  }
+}

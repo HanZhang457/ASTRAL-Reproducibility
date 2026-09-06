@@ -1,0 +1,263 @@
+{
+  "ArrowHead": {
+    "expected": {
+      "channels": 1,
+      "classes": 3,
+      "length": 251,
+      "test": 175,
+      "train": 36
+    },
+    "observed": {
+      "channels": 1,
+      "classes": 3,
+      "length": 251,
+      "test": 175,
+      "train": 36
+    },
+    "status": "PASS",
+    "test_file": {
+      "bytes": 484945,
+      "path": "data/raw/ArrowHead/ArrowHead_TEST.ts",
+      "sha256": "d646bb8766cad77cf4263b9ac37188414462f60898af942821a30204347fdccf"
+    },
+    "test_files": 1,
+    "train_file": {
+      "bytes": 100392,
+      "path": "data/raw/ArrowHead/ArrowHead_TRAIN.ts",
+      "sha256": "c8d05bad3e4428b63f809ccda018af93ae6e0bdb25d3496a1afb4633ad18195f"
+    },
+    "train_files": 1
+  },
+  "AtrialFibrillation": {
+    "expected": {
+      "channels": 2,
+      "classes": 3,
+      "length": 640,
+      "test": 15,
+      "train": 15
+    },
+    "observed": {
+      "channels": 2,
+      "classes": 3,
+      "length": 640,
+      "test": 15,
+      "train": 15
+    },
+    "status": "PASS",
+    "test_file": {
+      "bytes": 159342,
+      "path": "data/raw/AtrialFibrillation/AtrialFibrillation_TEST.ts",
+      "sha256": "fed5ef4795417dd14513aa39233676d20f9dbc8d016acc71940ef3f74368ade7"
+    },
+    "test_files": 1,
+    "train_file": {
+      "bytes": 158521,
+      "path": "data/raw/AtrialFibrillation/AtrialFibrillation_TRAIN.ts",
+      "sha256": "1037b09c03dfc9d9d6af0a32208519ae4697f6c86083d80dd4f57f7fc1f2cdc9"
+    },
+    "train_files": 1
+  },
+  "BasicMotions": {
+    "expected": {
+      "channels": 6,
+      "classes": 4,
+      "length": 100,
+      "test": 40,
+      "train": 40
+    },
+    "observed": {
+      "channels": 6,
+      "classes": 4,
+      "length": 100,
+      "test": 40,
+      "train": 40
+    },
+    "status": "PASS",
+    "test_file": {
+      "bytes": 227715,
+      "path": "data/raw/BasicMotions/BasicMotions_TEST.ts",
+      "sha256": "ea93ab9f58faa6869c18bbe16a6dca0b02f174aa676af7568788a1a2a8e7e8da"
+    },
+    "test_files": 1,
+    "train_file": {
+      "bytes": 227792,
+      "path": "data/raw/BasicMotions/BasicMotions_TRAIN.ts",
+      "sha256": "3dcb66b389ba93ed2de7879bceb27548e0ea7a5ffb59888d0db36b59af2a0e28"
+    },
+    "train_files": 1
+  },
+  "Coffee": {
+    "expected": {
+      "channels": 1,
+      "classes": 2,
+      "length": 286,
+      "test": 28,
+      "train": 28
+    },
+    "observed": {
+      "channels": 1,
+      "classes": 2,
+      "length": 286,
+      "test": 28,
+      "train": 28
+    },
+    "status": "PASS",
+    "test_file": {
+      "bytes": 89025,
+      "path": "data/raw/Coffee/Coffee_TEST.ts",
+      "sha256": "914a553a055b913859a4e0d80aa7fb080166b33e06cdbcb4f1e5ed80f10417e6"
+    },
+    "test_files": 1,
+    "train_file": {
+      "bytes": 89009,
+      "path": "data/raw/Coffee/Coffee_TRAIN.ts",
+      "sha256": "8895cbfd605adfa65b155b9ff81beb81c238ca4151abd4e964538c9c5fedc1ec"
+    },
+    "train_files": 1
+  },
+  "ECG200": {
+    "expected": {
+      "channels": 1,
+      "classes": 2,
+      "length": 96,
+      "test": 100,
+      "train": 100
+    },
+    "observed": {
+      "channels": 1,
+      "classes": 2,
+      "length": 96,
+      "test": 100,
+      "train": 100
+    },
+    "status": "PASS",
+    "test_file": {
+      "bytes": 107209,
+      "path": "data/raw/ECG200/ECG200_TEST.ts",
+      "sha256": "526d18e133ea51ac13dc528fa2bb13f63b4f93473bc329f0fb8a03d4ec92c235"
+    },
+    "test_files": 1,
+    "train_file": {
+      "bytes": 107212,
+      "path": "data/raw/ECG200/ECG200_TRAIN.ts",
+      "sha256": "6b855dbcbae2d968937c2416d22bdc2dc74be90d5ce6345f56950fa7e754b3fe"
+    },
+    "train_files": 1
+  },
+  "Epilepsy": {
+    "expected": {
+      "channels": 3,
+      "classes": 4,
+      "length": 206,
+      "test": 138,
+      "train": 137
+    },
+    "observed": {
+      "channels": 3,
+      "classes": 4,
+      "length": 206,
+      "test": 138,
+      "train": 137
+    },
+    "status": "PASS",
+    "test_file": {
+      "bytes": 471837,
+      "path": "data/raw/Epilepsy/Epilepsy_TEST.ts",
+      "sha256": "e68e220e31a9235fd7da23bbae2e59bd8315a3cc4c2b12f803885235b61b52ac"
+    },
+    "test_files": 1,
+    "train_file": {
+      "bytes": 463710,
+      "path": "data/raw/Epilepsy/Epilepsy_TRAIN.ts",
+      "sha256": "e2555afb91b2484831bcc66b3b5db3a362ba0697e855cfbb041eac165e371022"
+    },
+    "train_files": 1
+  },
+  "GunPoint": {
+    "expected": {
+      "channels": 1,
+      "classes": 2,
+      "length": 150,
+      "test": 150,
+      "train": 50
+    },
+    "observed": {
+      "channels": 1,
+      "classes": 2,
+      "length": 150,
+      "test": 150,
+      "train": 50
+    },
+    "status": "PASS",
+    "test_file": {
+      "bytes": 252305,
+      "path": "data/raw/GunPoint/GunPoint_TEST.ts",
+      "sha256": "79332750788a6227b325b96bd0d70130c8eb707b9731f8d7dec62b7a7d36017e"
+    },
+    "test_files": 1,
+    "train_file": {
+      "bytes": 84188,
+      "path": "data/raw/GunPoint/GunPoint_TRAIN.ts",
+      "sha256": "f842401779fd9800d247d8b33121a1a4643710a19b24917dbdd9a060ca8630d5"
+    },
+    "train_files": 1
+  },
+  "ItalyPowerDemand": {
+    "expected": {
+      "channels": 1,
+      "classes": 2,
+      "length": 24,
+      "test": 1029,
+      "train": 67
+    },
+    "observed": {
+      "channels": 1,
+      "classes": 2,
+      "length": 24,
+      "test": 1029,
+      "train": 67
+    },
+    "status": "PASS",
+    "test_file": {
+      "bytes": 274054,
+      "path": "data/raw/ItalyPowerDemand/ItalyPowerDemand_TEST.ts",
+      "sha256": "26122451f87dd0387ef90b18bc8a86c041371b8a1c068004922b939971247144"
+    },
+    "test_files": 1,
+    "train_file": {
+      "bytes": 18300,
+      "path": "data/raw/ItalyPowerDemand/ItalyPowerDemand_TRAIN.ts",
+      "sha256": "341269cb7e6cef96846b30e774580beec79addb93848ba360145219115a74b7c"
+    },
+    "train_files": 1
+  },
+  "StandWalkJump": {
+    "expected": {
+      "channels": 4,
+      "classes": 3,
+      "length": 2500,
+      "test": 15,
+      "train": 12
+    },
+    "observed": {
+      "channels": 4,
+      "classes": 3,
+      "length": 2500,
+      "test": 15,
+      "train": 12
+    },
+    "status": "PASS",
+    "test_file": {
+      "bytes": 809395,
+      "path": "data/raw/StandWalkJump/StandWalkJump_TEST.ts",
+      "sha256": "2309512e424c608393a1af7296fb8b53780b54699f5146283a19411bc3419959"
+    },
+    "test_files": 1,
+    "train_file": {
+      "bytes": 648190,
+      "path": "data/raw/StandWalkJump/StandWalkJump_TRAIN.ts",
+      "sha256": "8c8c6ed5178ea28781f6e06f5bd5e4c032f1600570343f7f7ca596c936497237"
+    },
+    "train_files": 1
+  }
+}
